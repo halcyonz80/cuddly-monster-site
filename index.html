@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuddly Monster</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #fceabb, #f8b500);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #4c3a1d;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    p {
+      font-size: 1.4em;
+      max-width: 600px;
+    }
+    .monster {
+      width: 200px;
+      height: 200px;
+      background-color: #ff66cc;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px #cc33aa;
+    }
+    .monster::before, .monster::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50%;
+      top: 50px;
+    }
+    .monster::before {
+      left: 40px;
+    }
+    .monster::after {
+      right: 40px;
+    }
+    .mouth {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 50px;
+      background: #4c3a1d;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="monster">
+    <div class="mouth"></div>
+  </div>
+  <h1>Hello from Cuddly Monster!</h1>
+  <p>
+    I'm a soft, friendly creature who loves warm hugs and silly dances. Welcome to my corner of the internet!
+  </p>
+  <div class="footer">
+    &copy; 2025 cuddly.monster — Made with fluff and pixels
+  </div>
+</body>
+</html>
+
